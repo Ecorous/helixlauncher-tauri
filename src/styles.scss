@@ -1,0 +1,209 @@
+@import "@catppuccin/palette/scss/mocha";
+@import url(https://fonts.bunny.net/css?family=atkinson-hyperlegible);
+
+$sidebar-left-width: 300px;
+
+* {
+  font-family: 'Atkinson Hyperlegible', 'Inter', monospace;
+}
+
+:root {
+  $sidebar-left-width: 300px;
+  background-color: $base;
+  color: $text;
+}
+
+input,
+button {
+  border: none;
+  background-color: $surface0;
+  color: $text;
+}
+
+.sidebar {
+  height: 100%;
+  width: $sidebar-left-width;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $surface0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.mainpage {
+  margin-left: $sidebar-left-width;
+  padding: 10px;
+}
+
+.sidebar-links {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  vertical-align: middle;
+  font-size: 30px;
+  width: $sidebar-left-width - 20;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.row:hover {
+  background-color: $surface1;
+  cursor: pointer;
+}
+
+.navbar-icon {
+  padding: 5px;
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.red:hover {
+  color: $red;
+}
+
+.instance {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: $surface0;
+  min-width: 500px;
+  max-width: 600px;
+  height: 165px;
+}
+
+.launchNameRow>img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.launchNameRow {
+  display: inline-flex;
+  justify-content: right;
+  text-align: left;
+}
+
+.launchNameRow>h3 {
+  display: inline;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.launchRow {
+  padding: 10px;
+  display: flex;
+  vertical-align: middle;
+  // font-size: 20px;
+  min-width: 120px;
+  font-size: x-large;
+  text-align: center;
+  max-height: 60px;
+  align-items: center;
+  border-radius: 10px;
+  // margin-right: 20px;
+  margin-left: 10px;
+  // float: right;
+  background-color: #90d68a;
+  color: $mantle;
+  // justify-self: right;
+  bottom:0;
+  float:left;
+}
+
+.launchRow > * {
+  font-size: xx-large;
+}
+
+.launchRow:hover {
+  background-color: $green;
+  cursor: pointer;
+}
+
+.launchRow:disabled {
+  background-color: #6cb166;
+}
+
+.launchRow:disabled:hover {
+  cursor: not-allowed;
+}
+
+.launch-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.account {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: $surface0;
+  width: 400px;
+  text-align: left;
+}
+
+.addInstanceButton {
+  border-radius: 10px;
+  background-color: #90d68a;
+  color: $mantle;
+}
+
+.addInstanceButton:hover {
+  cursor: pointer;
+  background-color: $green;
+}
+
+.addInstanceIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.override {
+  width: $sidebar-left-width - 62;
+}
+
+.svelte-n7cvum.content {
+  color: $text;
+  background-color: $base;
+  border-radius: 10px;
+  min-height: max-content;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+a:link {
+  color: $blue;
+}
+
+a:link:visited {
+  color: $blue;
+}
+
+.override-a {
+  width: $sidebar-left-width - 61;
+}
+
+.editButton {
+  background-color: $yellow;
+  float:left;
+}
+
+.editButton:hover {
+  background-color: $peach;
+}
+
+* {
+  transition: 0.25s;
+}
